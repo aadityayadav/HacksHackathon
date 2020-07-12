@@ -801,11 +801,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equationString: 
-  boundMinX: 
-  boundMaxX: 
-  boundMinY: 
-  boundMaxY: 
-  answer: 0
+  boundMinX: 0
+  boundMaxX: 0
+  boundMinY: 0
+  boundMaxY: 0
   inputField: {fileID: 1669791380}
   minXField: {fileID: 1214380725}
   maxXField: {fileID: 653426667}
