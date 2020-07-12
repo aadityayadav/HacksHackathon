@@ -38,9 +38,8 @@ public class EquationInput : MonoBehaviour {
 
     public void GetValues()
     {
-        
-        double stepX = (boundMaxX - boundMinX) / totalPoints;
-        double stepY = (boundMaxY - boundMinY) / totalPoints;
+        double stepX = (double) (boundMaxX - boundMinX) / totalPoints;
+        double stepY = (double) (boundMaxY - boundMinY) / totalPoints;
 
         string equation;
 
@@ -56,23 +55,11 @@ public class EquationInput : MonoBehaviour {
                 equation = equation.Replace("+-", "-");
                 equation = equation.Replace("-+", "-");
 
-                Debug.Log(equation + " " + (boundMinX + i * stepX) + " " + boundMinX);
                 answer[i, j, 0] = boundMinX + i * stepX;
                 answer[i, j, 1] = boundMinY + i * stepY;
                 answer[i, j, 2] = mathParser.Parse(equation, true);
             }
         }
-
-        /*for (int i = 0; i < totalPoints; i++)
-        {
-            for (int j = 0; j< totalPoints; j++)
-            {
-                Debug.Log(answer[i, j, 2]);
-            }
-        }*/
-
-
-        
 
     }
 
