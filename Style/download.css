@@ -1,0 +1,8 @@
+body{
+  background-color:black;
+  color: white;
+  text-align: center;
+}
+.content{
+align-items:flex-end;
+}
